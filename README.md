@@ -1,8 +1,6 @@
 # Hux Blog
 
-## [原仓库地址](https://github.com/Huxpro/huxpro.github.io)
-
-[Hux Blog](https://github.com/Huxpro/huxpro.github.io)
+### [原仓库地址](https://github.com/Huxpro/huxpro.github.io)
 
 ### [View Live Hux Blog &rarr;](https://huangxuan.me)
 
