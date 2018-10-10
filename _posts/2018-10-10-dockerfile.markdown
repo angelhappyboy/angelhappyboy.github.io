@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "DockerFile"
-subtitle:   " \"DockerFile"\"
+subtitle:   " \"DockerFile\""
 date:       2018-10-10 12:41:00
 author:     "Bin"
 header-img: "img/post/bg/docker.svg"
