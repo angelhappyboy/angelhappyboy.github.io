@@ -52,12 +52,16 @@ docker build -t friendlyhello -f Dockerfile .
 ```
 
 ## 启动应用(Run the app)
-使用[``docker run``](/2018/10/10/docker/cmd)命令使用已有构建的镜像启动一个容器  
+使用``docker run``命令使用已有构建的镜像启动一个容器[(更多run命令)](/2018/10/10/docker/cmd)  
 ``-p 4000:80`` 端口映射(寄主端口:容器端口)   
 ``friendlyhellow`` 使用的镜像名称 
 ```bash
 docker run -p 4000:80 friendlyhello
 ```
+
+
+## 分享你的镜像(Share your image)
+
 
 
 
