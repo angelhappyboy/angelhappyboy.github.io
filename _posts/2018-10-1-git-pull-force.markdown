@@ -13,41 +13,13 @@ tags:
 > “Yeah It's on. ”
 
 
-## git pull部分文件
+## git pull强制
 
 ```bash
-mkdir object
-```
-```bash
-cd object
-```
-初始化
-```bash
-git init
-```
-添加pull的地址
-```bash
-git remote add origin url
+git fetch --all
+git reset --hard origin/master
 ```
 
-检出指定文件
-```bash
-git config core.sparsecheckout true
-```
-添加文件夹
-```bash
-echo "dir/" >> .git/info/sparse-checkout
-```
-
-拉取
-```bash
-git pull origin mater
-```
-
-ps 设置默认拉取
-```bash
-git branch --set-upstream-to=orgin/master master
-```
 
 
 
