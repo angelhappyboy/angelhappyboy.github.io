@@ -59,7 +59,8 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: angelhappyboy
+# disqus_username: angelhappyboy
+duoshuo_share: false
 
 # Netease settings
 netease_comment: false
