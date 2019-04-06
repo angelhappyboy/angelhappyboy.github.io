@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "实战Docker-nginx+php+mysql"
-subtitle:   " \"使用DockerFile建立自己的镜像\""
+subtitle:   " \"使用已经存放在dockerhub上的镜像快速部署\""
 date:       2018-10-10 12:41:00
 author:     "Bin"
 header-img: "img/post/bg/docker.svg"
@@ -10,14 +10,23 @@ tags:
     - Docker
 ---
 
-> “Yeah It's on. ”
+> “docker 配置php+mysql+nginx. 待更新至更完美”
+
+
+## Mysql容器运行
+```bash
+docker run -d --name mysql -p 3306:3306 \
+           -v /services/mysql/data:/var/lib/mysql \
+           -e MYSQL_ROOT_PASSWORD=my-secret-pw \
+           angelhappyboy/mysql:5.7
+```
 
 
 ## Php容器运行
 ```bash
-docker run -d -p 9000:9000 --name php72 \
+docker run -d --name php72 \
            -v /services/nginx/wwwroot:/services/nginx/wwwroot \
-           php72
+           angelhappyboy/php:7.2-fpm
 ```
 
 ## Nginx容器运行
@@ -29,9 +38,3 @@ docker run -d -p 80:80 -p 443:443 --name nginx \
            --link php72 \
            angelhappyboy/nginx
 ```
-
-
-
-
-
-
